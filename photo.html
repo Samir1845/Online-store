@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+    <link rel="stylesheet" href="w3.css">
+    <style>
+.h
+{
+  text-decoration: none;
+  background-color:black;
+  color:white;
+  margin-left:16px;
+  
+}
+.imh
+{
+  width:320px;
+  padding:5px;
+  
+  margin-right:7px;
+}
+.io
+{
+background-color:blue;
+text-align: center;
+color:white;
+width:355px;
+border-radius:20px;
+margin-left:3px;
+border:2px solid black;
+margin-top:15px;
+margin-bottom:-20px;
+}
+.kl
+{
+  background-color:green;
+  color:white;
+  text-align:center;
+  width:313px;
+  padding:px;
+  margin-left:3px;
+}
+.w3-card-4
+{
+  width:340px;
+  padding:2px;
+  padding-left:10px;
+  
+}
+/*.imh:hover
+{
+  width:330px;
+  height:600px;
+  margin-left:0px;
+}*/
+ul li
+{
+  list-style-type:none;
+  display:inline-block;
+  padding:5px;
+ 
+ margin-top:-20px;
+  color:white;
+  margin-left:5px;
+  height:30px;
+  font-size:15px;
+  border-radius:20px;
+  align-items: center ;
+  
+  }   
+  .poi
+    {
+      background-color:black;
+      width:355px;
+      height:50px;
+      border:2px solid red;
+      border-radius:100px;
+      margin-left:3px;
+      
+    }
+   /* ul li:hover
+    {
+      background-color:black;
+      color:white;
+      border-radius:10px;
+    }*/
+    .iop
+    {
+      text-decoration:none;
+      margin-left:20px;
+    }
+                /* Button Styling */
+        #topBtn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+            background-color: #333;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            display: none; /* Initially hidden */
+        }
+        #topBtn:hover {
+            background-color: #555;
+            }
+   .ft {
+      
+      color:black;
+      width:300px;
+      text-align:center;
+      margin-right:px;
+      background-color: blue;
+      margin-left:20px;
+      border-radius:20px;
+    }
+  
+        
+    </style>
+</head>
+<body>
+  <div class="pgo">
+  <br>
+   <div class="poi">
+  <ul>
+    <li>
+      <a href="index.html" class="iop">
+     HOME</a>
+    </li>
+    <li class="iop"><u><b>PHOTOS </b></u></li>
+    <li><a href="video.html" class="iop">VIDEOS</a></li>
+  </ul>
+  </div>
+  <h1 class="io">PHOTOS</h1>
+   <div style="height: 10px; padding: 20px;"
+    <!-- Back to Top Button -->
+    <button id="topBtn" onclick="scrollToTop()">Top</button>
+    </div>
+  <div class="w3-container">
+    <div class="w3-card-4 w3-round-xxlarge">
+    
+      <img src="india-gate-new-delhi.jpg"class="imh">
+      <h5 class="kl"> INDIA GATE NEW DELHI<h5>
+     </div>
+
+      <br>
+      
+       <div class="w3-card-4 w3-round-xxlarge">
+      <img src="taj-mahal-agra-india-TAJ0217-9eab8f20d11d4391901867ed1ce222b8.jpg"class="imh">
+      <h5 class="kl"> TAJ MEHAL INDIA<h5>
+        </div>
+        <br>
+        <div class="w3-card-4 w3-round-xxlarge">
+         <img src="Gulmarg.jpg"class="imh">
+       <h5 class="kl">GULMARG JAMMU AND KASHMIR<h5>
+         </div>
+         <br>
+         <div class="w3-card-4 w3-round-xxlarge">
+            <img src="Shikara-boats-floating-on-Dal-Lake.jpg" class="imh">
+             <h5 class="kl">DAL LAKE SRINAGAR<h5>
+               
+  </div>
+  <br>
+    <div class="w3-card-4 w3-round-xxlarge">
+            <img src="goa.jpg" class="imh">
+             <h5 class="kl">GOA BEACH<h5></div>
+             <br>
+               <div class="w3-card-4 w3-round-xxlarge">
+            <img src="Lowe_Pine_forest_Kerala.jpg" class="imh">
+             <h5 class="kl">LOWE PINE FOREST KERALA<h5>
+               </div>
+               <footer>
+    <p class="ft">&copy; 2024 Your Website. All Rights Reserved.</p>
+  </div>
+
+    <script>
+            // Get the button
+        const topBtn = document.getElementById("topBtn");
+
+        // Show the button when the user scrolls down 100px
+        window.onscroll = function() {
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                topBtn.style.display = "block";
+            } else {
+                topBtn.style.display = "none";
+            }
+        };
+
+        // Scroll to the top when the button is clicked
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        }
+    </script>
+</body>
+</html>
